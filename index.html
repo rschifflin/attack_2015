@@ -7,6 +7,8 @@
     <meta name="description" content="Attack 2015 : ">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link type="text/javascript" media="screen" href="javascripts/jquery.js">
+    <link type="text/javascript" media="screen" href="javascripts/seat-selector.js">
 
     <title>Fan Plan</title>
   </head>
@@ -25,15 +27,18 @@
 
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        <p>
+          Enjoy your favorite event without the congestion!
+        </p>
 
         <div>
           <label for='eventpicker'>Event</label>
           <br>
           <input id='eventpicker' type='text' placeholder='Choose your event'></input>
         </div>
-
+        <br>
         <div>
-          <label for='eventpicker'>Seat</label>
+          <label>Seat</label>
           <br>
           <div id='choose-seat' type='text'>Select a seat</div>
         </div>
@@ -41,14 +46,14 @@
         <div>
           <h3> Choose your ticket price </h3>
           <ul>
-            <li><input type="radio" name="price">$53.99</input></li>
-            <li><input type="radio" name="price">$63.99</input></li>
-            <li><input type="radio" name="price">$73.99</input></li>
-            <li><input type="radio" name="price">$83.99</input></li>
+            <li><input type="radio" name="price">$53.99 2 hours early</input></li>
+            <li><input type="radio" name="price">$63.99 1 hour early</input></li>
+            <li><input type="radio" name="price">$73.99 30 minutes early</input></li>
+            <li><input type="radio" name="price">$83.99 on time</input></li>
           </ul>
         </div>
 
-        <input type='button'>Purchase</input>
+        <button>Purchase</button>
 
   </body>
 </html>
