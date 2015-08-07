@@ -1,5 +1,5 @@
 $(function (){
-  var $seat_selector = $('#select-a-seat');
+  var $seat_selector = $('#choose-seat');
   var sections = ['1','2','3','4','5','6'];
   for (var i in sections) {
     var $div = $('<div class="section">')
@@ -18,6 +18,8 @@ $(function (){
     $div.click(selectSeat);
     $seat_selector.append($div);
   }
+  var selection = $('<div id="seat-selection">')
+  $seat_selector.after(selection);
 
   function highlight(event) {
     $(this).css({backgroundColor:"red"});
@@ -28,7 +30,6 @@ $(function (){
   }
 
   function selectSeat(event) {
-    console.log($(this).data('section-number'));
-    $('#choose-seat').val($(this).data('section-number'));
+    $('#seat-selection').text('Selected section '+$(this).data('section-number'));
   }
 });
