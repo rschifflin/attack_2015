@@ -422,11 +422,12 @@ Small Device Styles
     font-size: 11px;
   }
 
-  .fan-plan-title {
-    h1, img {
-      display: inline;
-      border: none;
-      box-shadow: none;
-    }
+}
+
+.fan-plan-title {
+  h1, img {
+    display: inline;
+    border: none;
+    box-shadow: none;
   }
 }
