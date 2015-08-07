@@ -16,8 +16,8 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <div class="fan-plan-title">
-            <h1 id="project_title">Fan Plan</h1>
-            <img src="images/fan_plan.png"></img>
+            <img style="display: inline; border: none; box-shadow: none" src="images/fan_plan.png"></img>
+            <h1 style="display: inline;" id="project_title">Fan Plan</h1>
           </div>
           <h2 id="project_tagline"></h2>
         </header>
@@ -35,7 +35,7 @@
         <div>
           <label for='eventpicker'>Seat</label>
           <br>
-          <input id='eventpicker' type='text' placeholder='Choose your seat'></input>
+          <div id='choose-seat' type='text'>Select a seat</div>
         </div>
 
         <div>
@@ -47,6 +47,8 @@
             <li><input type="radio" name="price">$83.99 on time</input></li>
           </ul>
         </div>
+
+        <input type='button'>Purchase</input>
 
   </body>
 </html>
